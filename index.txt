@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dra. Alessandra Duarte | Menopausa e Emagrecimento</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+            serif: ['Cinzel', 'serif'],
+          },
+          colors: {
+            medical: {
+              wine: '#4A1525', /* Vinho/Púrpura escuro premium para saúde da mulher */
+              wineLight: '#FBF7F8', /* Fundo off-white com nuance suave */
+              gold: '#D4AF37', /* Ouro para detalhes e requinte */
+              dark: '#260B13',
+              slate: '#475569'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: #FBF7F8; color: #260B13; overflow-x: hidden; }
+    
+    .btn-premium {
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .btn-premium:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(74, 21, 37, 0.25);
+    }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-out;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+    }
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+  </style>
+</head>
+<body>
+
+  <header class="bg-white/90 backdrop-blur-md sticky top-0 w-full z-50 border-b border-medical-wine/10">
+    <div class="max-w-6xl mx-auto px-6 h-20 flex items-center justify-between">
+      <div class="font-serif text-base md:text-xl tracking-widest text-medical-dark font-medium">
+        DRA. ALESSANDRA DUARTE <span class="font-sans text-[9px] block tracking-widest text-medical-gold font-bold uppercase mt-0.5">Menopausa e Emagrecimento</span>
+      </div>
+      <a href="https://api.whatsapp.com/send/?phone=5518991973883&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" class="btn-premium bg-medical-wine text-white px-5 py-2.5 rounded-full text-xs font-bold tracking-wider uppercase">
+        Agendar Consulta
+      </a>
+    </div>
+  </header>
+
+  <section class="py-20 md:py-28 bg-gradient-to-b from-white to-medical-wineLight relative">
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-7 space-y-6">
+        <span class="inline-flex items-center gap-2 text-medical-wine bg-medical-wine/10 px-4 py-1.5 rounded-full font-bold text-xs uppercase tracking-widest">
+          <i data-lucide="shield-check" class="w-3.5 h-3.5 text-medical-gold"></i> CRM 161.801 | RQE 89.152
+        </span>
+        <h1 class="font-serif text-4xl md:text-5xl lg:text-6xl text-medical-dark leading-[1.2] font-normal">
+          Saúde e longevidade <br><span class="italic text-medical-wine font-semibold">sem perder a sua essência.</span>
+        </h1>
+        <p class="text-base md:text-lg text-medical-slate max-w-xl leading-relaxed font-medium">
+          Atravisse a menopausa sem o ganho de peso indesejado, a perda de energia ou o desânimo crônico. Um acompanhamento médico especializado focado em devolver a sua vitalidade, regulação hormonal e corpo saudável.
+        </p>
+        <div class="pt-4">
+          <a href="https://api.whatsapp.com/send/?phone=5518991973883&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-medical-wine text-white px-10 py-4 rounded-full font-bold text-sm tracking-wide shadow-md">
+            <i data-lucide="calendar" class="w-4 h-4 text-medical-gold"></i> Agendar Minha Consulta via WhatsApp
+          </a>
+        </div>
+      </div>
+      
+      <div class="md:col-span-5 relative">
+        <div class="absolute -inset-3 border border-medical-gold/30 rounded-2xl transform translate-x-2 translate-y-2 -z-10"></div>
+        <img src="img/draalessandra.webp" alt="Dra. Alessandra Duarte" class="rounded-2xl w-full aspect-[4/5] object-cover shadow-xl bg-white"
+             onerror="this.src='https://images.unsplash.com/photo-1559839734-2b71ea197ec2?q=80&w=1470&auto=format&fit=crop';">
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-medical-gold font-bold">Você não precisa conviver com isso</span>
+        <h2 class="font-serif text-3xl md:text-4xl text-medical-dark mt-2">Os sinais do desequilíbrio hormonal na menopausa</h2>
+        <div class="w-12 h-0.5 bg-medical-gold mx-auto mt-4"></div>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="p-6 bg-medical-wineLight rounded-xl border border-medical-wine/5">
+          <i data-lucide="scale" class="w-8 h-8 text-medical-wine mb-4"></i>
+          <h3 class="font-bold text-medical-dark mb-2">Ganho de Peso Abrupto</h3>
+          <p class="text-xs text-medical-slate leading-relaxed font-medium">Acúmulo de gordura principalmente na região abdominal, mesmo sem mudar a alimentação.</p>
+        </div>
+        <div class="p-6 bg-medical-wineLight rounded-xl border border-medical-wine/5">
+          <i data-lucide="thermometer-sun" class="w-8 h-8 text-medical-wine mb-4"></i>
+          <h3 class="font-bold text-medical-dark mb-2">Fogachos Noturnos</h3>
+          <p class="text-xs text-medical-slate leading-relaxed font-medium">Ondas de calor repentinas que prejudicam a qualidade do sono e geram cansaço no dia seguinte.</p>
+        </div>
+        <div class="p-6 bg-medical-wineLight rounded-xl border border-medical-wine/5">
+          <i data-lucide="battery-warning" class="w-8 h-8 text-medical-wine mb-4"></i>
+          <h3 class="font-bold text-medical-dark mb-2">Fadiga Crônica</h3>
+          <p class="text-xs text-medical-slate leading-relaxed font-medium">Uma sensação constante de falta de energia e lentidão metabólica que impede sua produtividade.</p>
+        </div>
+        <div class="p-6 bg-medical-wineLight rounded-xl border border-medical-wine/5">
+          <i data-lucide="brain" class="w-8 h-8 text-medical-wine mb-4"></i>
+          <h3 class="font-bold text-medical-dark mb-2">Oscilações de Humor</h3>
+          <p class="text-xs text-medical-slate leading-relaxed font-medium">Irritabilidade, ansiedade ou picos de desânimo causados puramente pelas quedas dos estrogênios.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-medical-wineLight">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-5 space-y-4">
+          <span class="text-xs uppercase tracking-widest text-medical-gold font-bold">Abordagem Integrativa</span>
+          <h2 class="font-serif text-3xl md:text-4xl text-medical-dark leading-tight">Como desenhamos a sua longevidade</h2>
+          <p class="text-sm text-medical-slate font-medium leading-relaxed">
+            Unimos o rigor da medicina clínica ao olhar focado no gerenciamento do estilo de vida moderno para criar um plano único focado em duas vertentes complementares:
+          </p>
+        </div>
+        <div class="md:col-span-7 space-y-6">
+          <div class="bg-white p-6 rounded-xl border border-medical-wine/10 flex gap-4 items-start">
+            <div class="bg-medical-wine/10 text-medical-wine p-2.5 rounded-lg"><i data-lucide="sparkles" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-medical-dark">Gerenciamento da Menopausa</h4>
+              <p class="text-xs text-medical-slate mt-1 font-medium leading-relaxed">Alívio real e seguro dos sintomas clínicos da menopausa através de terapias individualizadas e reposições baseadas em evidências científicas.</p>
+            </div>
+          </div>
+          <div class="bg-white p-6 rounded-xl border border-medical-wine/10 flex gap-4 items-start">
+            <div class="bg-medical-wine/10 text-medical-wine p-2.5 rounded-lg"><i data-lucide="trending-down" class="w-5 h-5"></i></div>
+            <div>
+              <h4 class="font-bold text-medical-dark">Emagrecimento Saudável e Sustentável</h4>
+              <p class="text-xs text-medical-slate mt-1 font-medium leading-relaxed">Destravamento do metabolismo feminino maduro, permitindo a perda de gordura sem medidas restritivas que degradam a massa muscular.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-white">
+    <div class="max-w-4xl mx-auto px-6 text-center space-y-6">
+      <span class="font-serif text-xs uppercase tracking-widest text-medical-gold font-bold">Sua Médica</span>
+      <h2 class="font-serif text-3xl md:text-4xl text-medical-dark">Dra. Alessandra Duarte</h2>
+      <p class="text-base text-medical-slate max-w-2xl mx-auto leading-relaxed font-medium">
+        Com registro de especialista qualificado (CRM 161.801 | RQE 89.152), dedico minha atuação a acolher e guiar mulheres durante a transição da menopausa e no processo de emagrecimento definitivo. Meu propósito é provar que é perfeitamente possível envelhecer com alta performance corporal, mente equilibrada e excelente composição de tecidos, preservando integralmente aquilo que você é.
+      </p>
+      <div class="text-xs text-medical-wine font-bold tracking-wider uppercase pt-2">
+        <i data-lucide="map-pin" class="w-3.5 h-3.5 inline mr-1 text-medical-gold"></i> Atendimentos em Consultório Presencial & Telemedicina Estruturada
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-medical-wineLight">
+    <div class="max-w-3xl mx-auto px-6">
+      <div class="text-center mb-12">
+        <h2 class="font-serif text-2xl md:text-3xl text-medical-dark">Dúvidas Frequentes</h2>
+        <div class="w-12 h-0.5 bg-medical-gold mx-auto mt-3"></div>
+      </div>
+
+      <div class="space-y-4">
+        <div class="faq-item bg-white p-5 rounded-xl border border-medical-wine/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-medical-dark">Como funciona a primeira consulta?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-medical-gold transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-medical-slate mt-3 font-medium leading-relaxed">Realizamos um mapeamento completo do seu estilo de vida, queixas principais e solicitamos ou revisamos exames laboratoriais hormonais e metabólicos específicos para traçar sua conduta inicial.</p>
+        </div>
+
+        <div class="faq-item bg-white p-5 rounded-xl border border-medical-wine/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-medical-dark">A consulta atende convênios médicos?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-medical-gold transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-medical-slate mt-3 font-medium leading-relaxed">Os atendimentos são realizados exclusivamente de forma particular. No entanto, fornecemos toda a documentação e recibos necessários para que você possa solicitar o reembolso junto ao seu plano de saúde.</p>
+        </div>
+
+        <div class="faq-item bg-white p-5 rounded-xl border border-medical-wine/10 cursor-pointer" onclick="toggleFaq(this)">
+          <div class="flex justify-between items-center">
+            <h4 class="font-bold text-sm text-medical-dark">A reposição hormonal é obrigatória no tratamento?</h4>
+            <i data-lucide="chevron-down" class="faq-icon w-4 h-4 text-medical-gold transition-transform"></i>
+          </div>
+          <p class="faq-answer text-xs text-medical-slate mt-3 font-medium leading-relaxed">Não. A terapia de reposição hormonal é avaliada individualmente de acordo com seus sintomas e contraindicações clínicas. Caso não seja indicada para você, utilizamos estratégias fitoterápicas e metabólicas igualmente eficientes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-24 bg-medical-dark text-white text-center relative overflow-hidden">
+    <div class="max-w-3xl mx-auto px-6 relative z-10 space-y-8">
+      <h2 class="font-serif text-3xl md:text-5xl leading-tight font-normal">Retome o controle da sua saúde e do seu metabolismo.</h2>
+      <p class="text-slate-300 text-sm md:text-base max-w-xl mx-auto font-medium leading-relaxed">
+        Fale diretamente com nossa equipe de agendamento para escolher o melhor dia e horário para a sua consulta médica.
+      </p>
+      <div>
+        <a href="https://api.whatsapp.com/send/?phone=5518991973883&text&type=phone_number&app_absent=0&utm_source=ig" target="_blank" class="btn-premium inline-flex items-center gap-3 bg-medical-wine text-white px-12 py-4.5 rounded-full font-bold text-sm tracking-wide shadow-xl">
+          <i data-lucide="message-circle" class="w-5 h-5 text-medical-gold"></i> Falar com a Equipe no WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-12 bg-white text-center text-medical-slate text-[10px] font-medium tracking-wider uppercase border-t border-medical-wine/10">
+    <p>© 2026 Dra. Alessandra Duarte — CRM 161.801 | RQE 89.152 — Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    lucide.createIcons();
+
+    function toggleFaq(element) {
+      const isActive = element.classList.contains('active');
+      document.querySelectorAll('.faq-item').forEach(item => item.classList.remove('active'));
+      if (!isActive) {
+        element.classList.add('active');
+      }
+    }
+  </script>
+</body>
+</html>
